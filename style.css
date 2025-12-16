@@ -1,0 +1,187 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: #f4f4f4;
+    color: #333;
+}
+
+
+nav {
+    background: #1a73e8;
+    padding: 15px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+nav a.active {
+    border-bottom: 2px solid yellow;
+}
+
+
+.hero {
+    text-align: center;
+    padding: 30px;
+}
+
+.hero img {
+    width: 170px;
+    height: 170px;
+    border-radius: 50%;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+
+section {
+    background: white;
+    width: 80%;
+    margin: 30px auto;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+h2 {
+    border-left: 5px solid #1a73e8;
+    padding-left: 10px;
+}
+
+
+.project-card {
+    background: #fafafa;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-left: 4px solid #1a73e8;
+    border-radius: 8px;
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input, textarea {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+button {
+    background: #1a73e8;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #0f5ccd;
+}
+
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #222;
+    color: white;
+}
+
+
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeIn 1s forwards;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+.slide-left {
+    opacity: 0;
+    transform: translateX(-50px);
+    animation: slideLeft 1s forwards;
+}
+
+@keyframes slideLeft {
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+
+.slide-right {
+    opacity: 0;
+    transform: translateX(50px);
+    animation: slideRight 1s forwards;
+}
+
+@keyframes slideRight {
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+
+.hero img {
+    animation: zoomIn 1.5s ease forwards;
+    opacity: 0;
+}
+
+@keyframes zoomIn {
+    from {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+
+button {
+    transition: transform 0.2s ease, background 0.3s ease;
+}
+
+button:hover {
+    transform: scale(1.05);
+}
+
+
+nav a {
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: yellow;
+}
+
+
+section {
+    animation: fadeIn 1s ease forwards;
+}
+
